@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tracking | CargoLink</title>
+  <meta name="description" content="Suivez votre expedition CargoLink en temps reel.">
+  <link rel="icon" href="img/logo-icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img src="img/logo-primary.png" alt="CargoLink">
+    </a>
+    <nav class="main-nav force-visible">
+      <a href="index.html">Accueil</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-outline" href="tracking.html">Tracking</a>
+    </nav>
+  </header>
+
+  <main class="tracking-page">
+    <section class="section tracking-search tracking-hero">
+      <div>
+        <p class="eyebrow">Track and Trace</p>
+        <h1>Suivez votre colis</h1>
+        <form id="trackingSearchForm" class="track-form" autocomplete="off">
+          <label for="trackingSearchInput">Numero de tracking</label>
+          <div class="track-row">
+            <input id="trackingSearchInput" type="text" placeholder="Ex: SKH009960661663S" required>
+            <button type="submit" class="btn">Verifier</button>
+          </div>
+        </form>
+        <p class="hint">Exemples de demo: SKH009960661663S, CLK20260327001</p>
+      </div>
+      <img src="img/tracking-illustration.png" alt="Illustration de suivi CargoLink">
+    </section>
+
+    <section id="trackingResult" class="section result hidden" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer compact">
+    <p>© 2026 CargoLink. Tous droits reserves.</p>
+    <a href="mentions-legales.html">Mentions legales</a>
+    <a href="politique-confidentialite.html">Confidentialite</a>
+  </footer>
+
+  <script src="js/tracking-data.js"></script>
+  <script src="js/tracking.js"></script>
+</body>
+</html>
